@@ -4,6 +4,62 @@
   * Last Modified: 7th of June 2023
   ======================================================== -->
 */
+
+const Amplify = window.aws_amplify.Amplify;
+const Auth = window.aws_amplify.Auth;
+
+//Cognito configuration with Amplify library
+Amplify.configure({
+  Auth: {
+      // REQUIRED - Amazon Cognito Region
+      region: 'us-east-1',
+
+      socialProviders: ['facebook', 'google'], 
+
+      // Amazon Cognito User Pool ID
+      userPoolId: 'us-east-1_p50z8WNR8',
+
+      // Amazon Cognito Web Client ID (26-char alphanumeric string)
+      userPoolWebClientId: '2did5vrg8u38kks2qaaisvfs40',
+
+      // Enforce user authentication prior to accessing AWS resources or not
+      mandatorySignIn: true,
+
+      // Manually set the authentication flow type. Default is 'USER_SRP_AUTH'
+      authenticationFlowType: 'USER_PASSWORD_AUTH',
+
+      oauth: {
+        // Domain name
+        domain: 'https://fit5225-a2-group4.auth.us-east-1.amazoncognito.com',
+
+        // Authorized scopes
+        scope: ['openid', 'profile'],
+
+        // Callback URL
+        redirectSignIn: 'https://yyun0002.github.io/index.html',
+
+        // Sign out URL
+        redirectSignOut: 'https://fit5225-a2-group4.auth.us-east-1.amazoncognito.com/login?client_id=2did5vrg8u38kks2qaaisvfs40&response_type=code&scope=openid+profile&redirect_uri=https://yyun0002.github.io/index.html',
+
+        // 'code' for Authorization code grant, 
+        responseType: 'code',
+        
+        // optional, for Cognito hosted ui specified options
+        options: {
+          // Indicates if the data collection is enabled to support Cognito advanced security features. By default, this flag is set to true.
+          AdvancedSecurityDataCollectionFlag : true
+        }
+      },
+      // Federated with Facebook
+      federationTarget: 'COGNITO_USER_AND_IDENTITY_POOLS',
+      facebookAppId: '{1638423173344135}',
+      
+      // Federated with Google
+      googleClientId: '228222147438-aelc81lp4dmg16m9d3a82fkik2tl3a76.apps.googleusercontent.com',
+    }
+  });
+
+
 document.addEventListener('DOMContentLoaded', () => 
 {
   "use strict";
