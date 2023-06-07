@@ -331,17 +331,7 @@
     
     
     <!-- AWS Amplify Library-->
-    <script src="https://unpkg.com/aws-amplify@3/dist/aws-amplify.min.js"></script>
-
-    <!-- Fetching user email once signed in-->
-    <script>
-      window.aws_amplify.Auth.currentAuthenticatedUser()
-          .then(user => {
-              console.log(user.attributes.email); // This will log the email of the user
-          })
-          .catch(err => console.log(err));
-    </script>
-  
+    <script src="https://unpkg.com/aws-amplify@3/dist/aws-amplify.min.js"></script>  
 
 
     <!-- Cognito Sign out function-->
