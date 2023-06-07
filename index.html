@@ -1,0 +1,246 @@
+  <!-- =======================================================
+  * Template Name: Logis
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <!DOCTYPE html>
+  <html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  
+    <title>Object Detection and Image Storage Services</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+  
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+  
+  
+  </head>
+  
+  <body>
+  
+    <!-- ======= Header ======= -->
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+  
+        <a href="imageDetection.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <h1>Object Detection and Image Storage Services</h1>
+        </a>
+  
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a href="index.html" class="active">Object Detection</a></li>
+            <li><a href="imageQueries.html" >Image Queries</a></li>
+            <li><a href="#" onclick="signOut();">Sign Out</a></li>
+          </ul>
+        </nav><!-- .navbar -->
+  
+      </div>
+    </header><!-- End Header -->
+    <!-- End Header -->
+  
+    <!-- ======= Object Detection and Image Storage Section ======= -->
+    <section id="hero" class="hero d-flex align-items-center">
+      <div class="container">
+        <div class="row gy-4 d-flex justify-content-between">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h2 data-aos="fade-up">Image Upload</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Our website offers the image processing capabilities which can detect objects from uploaded images. 
+              Names of all detected objects are attached to each image prior to saving into a secure storage.
+            </p>
+            <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
+              <input type="file" class="form-control" id="uploaded-image" placeholder="Please upload an image to the database">
+              <button type="submit" id="upload-button" class="btn btn-primary">Upload</button>
+            </form>
+            <h3 data-aos="fade-up"> Chosen Image</h3>
+            <output id="preview-image" ></output>
+            
+  
+            <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="col-lg-3 col-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span data-purecounter-start="0" data-purecounter-end="300" data-purecounter-duration="1" class="purecounter"></span>
+                  <p>Users</p>
+                </div>
+              </div><!-- End Stats Item -->
+  
+              <div class="col-lg-3 col-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter"></span>
+                  <p>Objects Detected</p>
+                </div>
+              </div><!-- End Stats Item -->
+  
+              <div class="col-lg-3 col-6">
+                <div class="stats-item text-center w-100 h-100">
+                  <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
+                  <p>Developers</p>
+                </div>
+              </div><!-- End Stats Item -->
+            </div>
+          </div>
+  
+          <div class="col-lg-3 order-last order-lg-last" data-aos="zoom-out">
+            <img src="assets/img/image-detection-img.jpeg" class="img-fluid mb-3 mb-lg-0" alt="">
+            <img src="assets/img/image-detection-img-2.jpeg" class="img-fluid mb-3 mb-lg-0" alt="">
+          </div>
+        </div>
+      </div>
+    </section><!-- End Hero Section -->
+  
+    <main id="main">
+  
+      <!-- ======= Image Queries Section ======= -->
+      <section id="intro-to-query" class="intro-to-query">
+        <div class="container" data-aos="zoom-out">
+  
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <h3>What's more? - Image Queries</h3>
+              <p> You can search for a particular images based on tags and object counts</p>
+              <a class="cta-btn" href="imageQueries.html">Try now >>></a>
+            </div>
+          </div>
+  
+        </div>
+      </section><!-- End Image Queries Section -->
+  
+    </main><!-- End #main -->
+  
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+  
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span>Object Detection</span>
+            </a>
+            <p>A powerfully capable service that equips state-of-the-art partially trained AI technolgy in 
+              detecting objects from images. Additional advanced features include image uploading and queries are 
+              also fully provided.
+            </p>
+            <div class="social-links d-flex mt-4">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+  
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="index.html">Image Detection</a></li>
+              <li><a href="imageQueries.html">Image queries </a></li>
+              <li><a href="#" onclick="signOut();">Sign Out</a></li>  
+            </ul>
+          </div>
+  
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              <strong>Phone:</strong> +61 0099 9900<br>
+              <strong>Email:</strong> objectdetection@group4.monash.edu<br>
+            </p>
+  
+          </div>
+  
+        </div>
+      </div>
+  
+      <div class="container mt-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Monash University, Cloud Computing S1 2023, Group 4</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/ -->
+          Website developed by Lleyton, Truc Vy, Yeongin, Mohith. 
+          Template designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+  
+    </footer><!-- End Footer -->
+    <!-- End Footer -->
+  
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+    <div id="preloader"></div>
+  
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    
+    <script src="https://unpkg.com/aws-amplify@3/dist/aws-amplify.min.js"></script>
+
+  
+    <!-- AWS SDK file-->
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.932.0.min.js"></script>
+    
+    
+    <!-- AWS Amplify Library-->
+    <script src="https://unpkg.com/aws-amplify@3/dist/aws-amplify.min.js"></script>
+
+    <!-- Fetching user email once signed in-->
+    <script>
+      window.aws_amplify.Auth.currentAuthenticatedUser()
+          .then(user => {
+              console.log(user.attributes.email); // This will log the email of the user
+          })
+          .catch(err => console.log(err));
+    </script>
+
+
+    <!-- Cognito Sign out function-->
+    <script>
+      function signOut() {
+          window.aws_amplify.Auth.signOut()
+              .then(data => {
+                  console.log(data);
+                  window.location.href = "https://fit5225-a2-group4.auth.us-east-1.amazoncognito.com/login?client_id=2did5vrg8u38kks2qaaisvfs40&response_type=code&scope=openid+profile&redirect_uri=https://yyun0002.github.io/index.html";
+              })
+              .catch(err => console.log(err));
+      }
+    </script>
+  
+    <!-- Main JS File -->
+    <script src="assets/js/imageUploading.js"></script>
+  
+  </body>
+  
+  </html>
