@@ -60,6 +60,11 @@ Amplify.configure({
     }
   });
 
+window.aws_amplify.Auth.currentAuthenticatedUser()
+          .then(user => {
+              console.log(user.attributes.email); // This will log the email of the user
+          })
+          .catch(err => console.log(err));
 
 var numberOfTagsSection1 = 1;
 var numberOfTagsSection3 = 1;
