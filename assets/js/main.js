@@ -5,6 +5,9 @@
   ======================================================== -->
 */
 
+const Amplify = window.aws_amplify.Amplify;
+const Auth = window.aws_amplify.Auth;
+
 var numberOfTagsSection1 = 1;
 var numberOfTagsSection3 = 1;
 
